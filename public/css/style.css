@@ -3,8 +3,8 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: "Jost", system-ui, sans-serif;
-    --font-serif: "Cormorant Garamond", Georgia, serif;
+    --font-sans: "Nunito", system-ui, sans-serif;
+    --font-serif: "Playfair Display", Georgia, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-50: oklch(97% 0.014 254.604);
