@@ -21,7 +21,6 @@
     --container-sm: 24rem;
     --container-lg: 32rem;
     --container-xl: 36rem;
-    --container-2xl: 42rem;
     --container-6xl: 72rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
@@ -289,6 +288,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .max-h-80 {
+    max-height: calc(var(--spacing) * 80);
   }
   .min-h-screen {
     min-height: 100vh;
@@ -818,6 +820,11 @@
     @media (width >= 40rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .md\:max-h-96 {
+    @media (width >= 48rem) {
+      max-height: calc(var(--spacing) * 96);
     }
   }
   .md\:grid-cols-2 {
