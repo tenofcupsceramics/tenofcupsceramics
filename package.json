@@ -4,8 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "node --watch app.js"
+    "build:css": "npx @tailwindcss/cli -i src/input.css -o public/css/style.css",
+    "start": "npm run build:css && node app.js",
+    "dev": "npx @tailwindcss/cli -i src/input.css -o public/css/style.css --watch & node --watch app.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,11 @@
   "dependencies": {
     "ejs": "^5.0.2",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.9",
+    "tailwindcss": "^4.2.2"
   }
 }

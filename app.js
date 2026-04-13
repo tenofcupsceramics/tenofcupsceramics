@@ -1,3 +1,4 @@
+const http = require("http");
 const express = require("express");
 const path = require("path");
 
@@ -20,6 +21,7 @@ app.use((req, res) => {
   res.status(404).render("404", { title: "Page Not Found" });
 });
 
-app.listen(PORT, () => {
+const server = http.createServer(app);
+server.listen(PORT, () => {
   console.log(`Ten of Cups Ceramics running at http://localhost:${PORT}`);
 });
