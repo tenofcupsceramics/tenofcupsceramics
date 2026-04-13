@@ -289,9 +289,6 @@
   .h-full {
     height: 100%;
   }
-  .max-h-80 {
-    max-height: calc(var(--spacing) * 80);
-  }
   .min-h-screen {
     min-height: 100vh;
   }
@@ -489,6 +486,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .object-cover {
     object-fit: cover;
@@ -820,11 +820,6 @@
     @media (width >= 40rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
-    }
-  }
-  .md\:max-h-96 {
-    @media (width >= 48rem) {
-      max-height: calc(var(--spacing) * 96);
     }
   }
   .md\:grid-cols-2 {
