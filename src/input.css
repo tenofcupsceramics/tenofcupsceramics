@@ -1,14 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pink-50: #fff5f7;
-  --color-pink-100: #fce8ed;
-  --color-pink-200: #f0cdd6;
-  --color-pink-300: #e0a0b0;
-  --color-pink-400: #d07085;
-  --color-pink-500: #c4687a;
-  --color-pink-600: #a84d60;
-  --color-pink-700: #8a3549;
+  --color-brand-blue: #0062FF;
+  --color-brand-yellow: #FFCF00;
+  --color-brand-amber: #FFAB00;
+  --color-brand-peach: #FFDDD4;
+  --color-brand-grey: #666666;
 
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Jost", system-ui, sans-serif;

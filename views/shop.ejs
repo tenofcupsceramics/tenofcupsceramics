@@ -3,21 +3,21 @@
 <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
 
   <!-- Page title -->
-  <div class="mb-8 pb-6 border-b border-pink-200">
+  <div class="mb-8 pb-6 border-b-2 border-[#FFCF00]">
     <h1 class="font-serif text-3xl sm:text-4xl font-normal">Shop</h1>
   </div>
 
   <!-- Category filters -->
   <div class="flex flex-wrap gap-2 mb-8">
     <a href="/shop"
-       class="px-4 py-1.5 rounded-full text-xs border transition-colors
-              <%= !activeCategory ? 'border-pink-500 text-pink-500 bg-pink-50' : 'border-pink-200 text-[#9e7080] hover:border-pink-400 hover:text-pink-500' %>">
+       class="px-4 py-1.5 rounded-full text-xs font-medium border-2 transition-colors
+              <%= !activeCategory ? 'border-[#0062FF] text-[#0062FF] bg-blue-50' : 'border-[#FFDDD4] text-[#666666] hover:border-[#0062FF] hover:text-[#0062FF]' %>">
       All
     </a>
     <% categories.forEach(cat => { %>
       <a href="/shop?category=<%= cat %>"
-         class="px-4 py-1.5 rounded-full text-xs border transition-colors
-                <%= activeCategory === cat ? 'border-pink-500 text-pink-500 bg-pink-50' : 'border-pink-200 text-[#9e7080] hover:border-pink-400 hover:text-pink-500' %>">
+         class="px-4 py-1.5 rounded-full text-xs font-medium border-2 transition-colors
+                <%= activeCategory === cat ? 'border-[#0062FF] text-[#0062FF] bg-blue-50' : 'border-[#FFDDD4] text-[#666666] hover:border-[#0062FF] hover:text-[#0062FF]' %>">
         <%= cat.charAt(0).toUpperCase() + cat.slice(1) %>
       </a>
     <% }) %>
@@ -28,18 +28,18 @@
     <% items.forEach(item => { %>
       <a href="/shop/<%= item.slug %>" class="group">
         <!-- Image -->
-        <div class="relative aspect-square bg-pink-100 rounded-xl overflow-hidden mb-3">
+        <div class="relative aspect-square bg-[#FFDDD4] rounded-2xl overflow-hidden mb-3">
           <img src="<%= item.image %>" alt="<%= item.name %>"
                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           <% if (!item.inStock) { %>
-            <span class="absolute top-2 left-2 bg-white text-[#9e7080] text-[10px] px-2 py-0.5 rounded-full border border-pink-200">
+            <span class="absolute top-2 left-2 bg-[#FFCF00] text-[#1a1a1a] text-[10px] font-semibold px-2 py-0.5 rounded-full">
               Sold Out
             </span>
           <% } %>
         </div>
         <!-- Info -->
         <h3 class="text-sm font-medium mb-0.5"><%= item.name %></h3>
-        <p class="text-xs text-[#9e7080]">$<%= (item.price / 100).toFixed(2) %></p>
+        <p class="text-xs text-[#666666]">$<%= (item.price / 100).toFixed(2) %></p>
       </a>
     <% }) %>
   </div>
