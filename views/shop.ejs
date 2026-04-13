@@ -1,0 +1,39 @@
+<%- include('partials/header') %>
+
+<section class="section page-header">
+  <div class="container">
+    <h1>Shop</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filter-bar">
+      <a href="/shop" class="filter-link <%= !activeCategory ? 'active' : '' %>">All</a>
+      <% categories.forEach(cat => { %>
+        <a href="/shop?category=<%= cat %>" class="filter-link <%= activeCategory === cat ? 'active' : '' %>">
+          <%= cat.charAt(0).toUpperCase() + cat.slice(1) %>
+        </a>
+      <% }) %>
+    </div>
+
+    <div class="item-grid">
+      <% items.forEach(item => { %>
+        <a href="/shop/<%= item.slug %>" class="item-card">
+          <div class="item-image">
+            <img src="<%= item.image %>" alt="<%= item.name %>" />
+            <% if (!item.inStock) { %>
+              <span class="badge sold-out">Sold Out</span>
+            <% } %>
+          </div>
+          <div class="item-info">
+            <h3><%= item.name %></h3>
+            <p class="price">$<%= (item.price / 100).toFixed(2) %></p>
+          </div>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

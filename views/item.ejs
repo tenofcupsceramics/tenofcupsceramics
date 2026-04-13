@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<section class="section">
+  <div class="container item-detail">
+    <div class="item-detail__image">
+      <img src="<%= item.image %>" alt="<%= item.name %>" />
+    </div>
+    <div class="item-detail__info">
+      <p class="breadcrumb"><a href="/shop">Shop</a> &rsaquo; <%= item.name %></p>
+      <h1><%= item.name %></h1>
+      <p class="price price--large">$<%= (item.price / 100).toFixed(2) %></p>
+      <p class="description"><%= item.description %></p>
+      <ul class="details-list">
+        <% item.details.forEach(d => { %>
+          <li><%= d %></li>
+        <% }) %>
+      </ul>
+      <% if (item.inStock) { %>
+        <button class="btn btn--full" disabled>Buy Now — Coming Soon</button>
+      <% } else { %>
+        <button class="btn btn--full btn--disabled" disabled>Sold Out</button>
+      <% } %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
