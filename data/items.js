@@ -8,7 +8,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Hand-painted pixel tile design", "Holds ~8oz", "Dishwasher safe"],
     image: "/images/pixel-cup-5.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 31,
@@ -19,7 +19,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Hand-painted pixel tile design", "Holds ~8oz", "Dishwasher safe"],
     image: "/images/pixel-cup-4.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 30,
@@ -30,7 +30,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Hand-painted pixel tile design", "Holds ~8oz", "Dishwasher safe"],
     image: "/images/pixel-cup-3.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 29,
@@ -41,7 +41,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Hand-painted dot tile design", "Holds ~8oz", "Dishwasher safe"],
     image: "/images/pixel-cup-2.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 28,
@@ -52,7 +52,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Hand-painted pixel tile design", "Holds ~8oz", "Dishwasher safe"],
     image: "/images/pixel-cup-1.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 27,
@@ -63,7 +63,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Checkerboard glaze pattern", "Holds ~10oz", "Dishwasher safe"],
     image: "/images/checkerboard-mug-grey.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 26,
@@ -74,7 +74,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Checkerboard glaze pattern", "Holds ~10oz", "Dishwasher safe"],
     image: "/images/checkerboard-mug-periwinkle.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 25,
@@ -85,7 +85,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Checkerboard glaze pattern", "Holds ~10oz", "Dishwasher safe"],
     image: "/images/checkerboard-mug-teal.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 24,
@@ -96,7 +96,7 @@ const items = [
     details: ["Hand-thrown stoneware", "Checkerboard glaze pattern", "Holds ~10oz", "Dishwasher safe"],
     image: "/images/checkerboard-mug-lime.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 23,
@@ -114,7 +114,7 @@ const items = [
     ],
     image: "/images/olive-oil-dispenser.jpg",
     category: "miscellaneous",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 17,
@@ -131,7 +131,7 @@ const items = [
     ],
     image: "/images/tile-plate.jpg",
     category: "plates",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 16,
@@ -148,7 +148,7 @@ const items = [
     ],
     image: "/images/mahjong-cup.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 15,
@@ -182,7 +182,7 @@ const items = [
     ],
     image: "/images/orchid-purple-matcha-bowl.jpg",
     category: "bowls",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 13,
@@ -199,7 +199,7 @@ const items = [
     ],
     image: "/images/light-blue-matcha-bowl.jpg",
     category: "bowls",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 12,
@@ -216,7 +216,7 @@ const items = [
     ],
     image: "/images/sage-matcha-bowl.jpg",
     category: "bowls",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 10,
@@ -233,7 +233,7 @@ const items = [
     ],
     image: "/images/java-matcha-bowl.jpg",
     category: "bowls",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 9,
@@ -250,7 +250,7 @@ const items = [
     ],
     image: "/images/tetris-tile-cup.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 8,
@@ -267,7 +267,7 @@ const items = [
     ],
     image: "/images/sunshine-tile-cup.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 7,
@@ -284,7 +284,7 @@ const items = [
     ],
     image: "/images/cloud-tile-cup.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 1,
@@ -301,7 +301,7 @@ const items = [
     ],
     image: "/images/placeholder.svg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 2,
@@ -318,7 +318,7 @@ const items = [
     ],
     image: "/images/placeholder.svg",
     category: "bowls",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 3,
@@ -335,7 +335,7 @@ const items = [
     ],
     image: "/images/placeholder.svg",
     category: "vases",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 4,
@@ -369,7 +369,7 @@ const items = [
     ],
     image: "/images/placeholder.svg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 6,
@@ -386,7 +386,7 @@ const items = [
     ],
     image: "/images/placeholder.svg",
     category: "plates",
-    inStock: true,
+    inStock: false,
   },
 ];
 
