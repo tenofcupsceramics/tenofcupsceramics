@@ -32,6 +32,34 @@
   </div>
 </section>
 
+<!-- Carousel -->
+<section class="py-10 overflow-hidden">
+  <div class="relative">
+    <div id="carousel-track" class="flex gap-4 transition-transform duration-500 ease-in-out px-4 sm:px-6">
+      <img src="/images/carousel-1.jpg" class="h-72 sm:h-96 w-auto rounded-2xl object-cover shrink-0" alt="Blue Movement Cup" />
+      <img src="/images/carousel-2.jpg" class="h-72 sm:h-96 w-auto rounded-2xl object-cover shrink-0" alt="Cactus with Mini Pixel Sky Cup" />
+      <img src="/images/carousel-3.jpg" class="h-72 sm:h-96 w-auto rounded-2xl object-cover shrink-0" alt="Cloud Tile Cup" />
+      <img src="/images/carousel-4.jpg" class="h-72 sm:h-96 w-auto rounded-2xl object-cover shrink-0" alt="Sunshine Tile Cup" />
+      <img src="/images/carousel-5.jpg" class="h-72 sm:h-96 w-auto rounded-2xl object-cover shrink-0" alt="Tetris Tile Cup" />
+    </div>
+    <!-- Prev button -->
+    <button onclick="moveCarousel(-1)" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center text-[#1a1a1a] hover:bg-[#FFDDD4] transition-colors z-10">&#8592;</button>
+    <!-- Next button -->
+    <button onclick="moveCarousel(1)" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center text-[#1a1a1a] hover:bg-[#FFDDD4] transition-colors z-10">&#8594;</button>
+  </div>
+</section>
+
+<script>
+  let carouselIndex = 0;
+  function moveCarousel(dir) {
+    const track = document.getElementById('carousel-track');
+    const items = track.children;
+    const itemWidth = items[0].offsetWidth + 16;
+    carouselIndex = Math.max(0, Math.min(carouselIndex + dir, items.length - 1));
+    track.style.transform = `translateX(-${carouselIndex * itemWidth}px)`;
+  }
+</script>
+
 <!-- About blurb -->
 <section class="px-4 sm:px-6 py-16">
   <div class="max-w-6xl mx-auto">
