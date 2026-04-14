@@ -32,9 +32,9 @@
           <img src="<%= item.image %>" alt="<%= item.name %>"
                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
           <% if (!item.inStock) { %>
-            <span class="absolute top-2 left-2 bg-[#FFCF00] text-[#1a1a1a] text-[10px] font-semibold px-2 py-0.5 rounded-full">
-              Sold Out
-            </span>
+            <div class="absolute top-5 -right-8 w-32 rotate-45 bg-[#0062FF] text-white text-[10px] font-sans font-semibold text-center py-1 tracking-wide">
+              SOLD OUT
+            </div>
           <% } %>
         </div>
         <!-- Info -->

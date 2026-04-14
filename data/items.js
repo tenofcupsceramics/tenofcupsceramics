@@ -165,7 +165,7 @@ const items = [
     ],
     image: "/images/chiclet-cup.jpg",
     category: "mugs",
-    inStock: true,
+    inStock: false,
   },
   {
     id: 14,
