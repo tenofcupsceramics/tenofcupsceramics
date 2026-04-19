@@ -10,3 +10,11 @@
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Nunito", system-ui, sans-serif;
 }
+
+.grid-bg {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.12) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

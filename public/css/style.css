@@ -913,6 +913,11 @@
     }
   }
 }
+.grid-bg {
+  background-color: #ffffff;
+  background-image: linear-gradient(rgba(0,0,0,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.12) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
