@@ -98,4 +98,75 @@
   </div>
 </section>
 
+<!-- Gift Ideas -->
+<section class="py-10 overflow-hidden">
+  <h2 class="font-serif text-2xl sm:text-3xl font-normal px-4 sm:px-6 mb-6">Thoughtful Gift Ideas</h2>
+  <div class="relative">
+    <div id="gift-track" class="flex gap-4 transition-transform duration-500 ease-in-out px-4 sm:px-6">
+      <a href="/shop/cloud-tile-cup" class="shrink-0 group">
+        <div class="h-64 w-64 rounded-2xl overflow-hidden bg-[#FFDDD4] mb-3">
+          <img src="/images/cloud-tile-cup.jpg" alt="Cloud Tile Cup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <p class="text-sm font-medium">Cloud Tile Cup</p>
+        <p class="text-xs text-[#666666]">$68.00</p>
+      </a>
+      <a href="/shop/mahjong-cup" class="shrink-0 group">
+        <div class="h-64 w-64 rounded-2xl overflow-hidden bg-[#FFDDD4] mb-3">
+          <img src="/images/mahjong-cup.jpg" alt="Mahjong Cup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <p class="text-sm font-medium">Mahjong Cup</p>
+        <p class="text-xs text-[#666666]">$88.00</p>
+      </a>
+      <a href="/shop/chiclet-cup" class="shrink-0 group">
+        <div class="h-64 w-64 rounded-2xl overflow-hidden bg-[#FFDDD4] mb-3">
+          <img src="/images/chiclet-cup.jpg" alt="Chiclet Cup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <p class="text-sm font-medium">Chiclet Cup</p>
+        <p class="text-xs text-[#666666]">$78.00</p>
+      </a>
+      <a href="/shop/tile-plate" class="shrink-0 group">
+        <div class="h-64 w-64 rounded-2xl overflow-hidden bg-[#FFDDD4] mb-3">
+          <img src="/images/tile-plate.jpg" alt="Tile Plate" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <p class="text-sm font-medium">Tile Plate</p>
+        <p class="text-xs text-[#666666]">$98.00</p>
+      </a>
+      <a href="/shop/olive-branch-oil-dispenser" class="shrink-0 group">
+        <div class="h-64 w-64 rounded-2xl overflow-hidden bg-[#FFDDD4] mb-3">
+          <img src="/images/olive-oil-dispenser.jpg" alt="Olive Branch Oil Dispenser" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <p class="text-sm font-medium">Olive Branch Oil Dispenser</p>
+        <p class="text-xs text-[#666666]">$98.00</p>
+      </a>
+      <a href="/shop/tetris-tile-cup" class="shrink-0 group">
+        <div class="h-64 w-64 rounded-2xl overflow-hidden bg-[#FFDDD4] mb-3">
+          <img src="/images/tetris-tile-cup.jpg" alt="Tetris Tile Cup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <p class="text-sm font-medium">Tetris Tile Cup</p>
+        <p class="text-xs text-[#666666]">$68.00</p>
+      </a>
+      <a href="/shop/sunshine-tile-cup" class="shrink-0 group">
+        <div class="h-64 w-64 rounded-2xl overflow-hidden bg-[#FFDDD4] mb-3">
+          <img src="/images/sunshine-tile-cup.jpg" alt="Sunshine Tile Cup" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <p class="text-sm font-medium">Sunshine Tile Cup</p>
+        <p class="text-xs text-[#666666]">$68.00</p>
+      </a>
+    </div>
+    <button onclick="moveGiftCarousel(-1)" class="absolute left-2 top-32 -translate-y-1/2 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center text-[#1a1a1a] hover:bg-[#FFDDD4] transition-colors z-10">&#8592;</button>
+    <button onclick="moveGiftCarousel(1)" class="absolute right-2 top-32 -translate-y-1/2 bg-white shadow-md rounded-full w-10 h-10 flex items-center justify-center text-[#1a1a1a] hover:bg-[#FFDDD4] transition-colors z-10">&#8594;</button>
+  </div>
+</section>
+
+<script>
+  let giftIndex = 0;
+  function moveGiftCarousel(dir) {
+    const track = document.getElementById('gift-track');
+    const items = track.children;
+    const itemWidth = items[0].offsetWidth + 16;
+    giftIndex = Math.max(0, Math.min(giftIndex + dir, items.length - 1));
+    track.style.transform = `translateX(-${giftIndex * itemWidth}px)`;
+  }
+</script>
+
 <%- include('partials/footer') %>
