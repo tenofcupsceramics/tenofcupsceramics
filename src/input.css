@@ -11,6 +11,14 @@
   --font-sans: "Nunito", system-ui, sans-serif;
 }
 
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 18s linear infinite;
+}
+
 .grid-bg {
   background-color: #ffffff;
   background-image:

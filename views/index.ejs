@@ -23,12 +23,20 @@
   </div>
 </section>
 
-<!-- Highlight band -->
-<section class="bg-[#FFAB00] border-t-4 border-b-4 border-[#FFCF00] px-4 sm:px-6 py-5">
-  <div class="max-w-6xl mx-auto flex flex-wrap gap-6 sm:gap-12 items-center justify-center sm:justify-start text-sm font-medium text-[#1a1a1a]">
-    <span class="flex items-center gap-2"><img src="/images/favicon.png" class="h-5 w-auto" alt="" /> Hand-thrown stoneware</span>
-    <span class="flex items-center gap-2"><img src="/images/favicon.png" class="h-5 w-auto" alt="" /> Small batch production</span>
-    <span class="flex items-center gap-2"><img src="/images/favicon.png" class="h-5 w-auto" alt="" /> Made to be used daily</span>
+<!-- Highlight band marquee -->
+<section class="bg-[#FFAB00] border-t-4 border-b-4 border-[#FFCF00] py-5 overflow-hidden">
+  <div class="flex animate-marquee whitespace-nowrap">
+    <% [1,2].forEach(() => { %>
+      <span class="flex items-center gap-2 mx-10 text-sm font-medium text-[#1a1a1a] shrink-0">
+        <img src="/images/favicon.png" class="h-5 w-auto mix-blend-multiply" style="filter: hue-rotate(106deg) brightness(1.1);" alt="" /> Hand-thrown stoneware
+      </span>
+      <span class="flex items-center gap-2 mx-10 text-sm font-medium text-[#1a1a1a] shrink-0">
+        <img src="/images/favicon.png" class="h-5 w-auto mix-blend-multiply" style="filter: hue-rotate(106deg) brightness(1.1);" alt="" /> Small batch production
+      </span>
+      <span class="flex items-center gap-2 mx-10 text-sm font-medium text-[#1a1a1a] shrink-0">
+        <img src="/images/favicon.png" class="h-5 w-auto mix-blend-multiply" style="filter: hue-rotate(106deg) brightness(1.1);" alt="" /> Made to enhance your daily rituals
+      </span>
+    <% }) %>
   </div>
 </section>
 
